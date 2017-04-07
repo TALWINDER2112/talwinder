@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="radio_male">MALE</string>
+    <string name="radio_female">FEMALE</string>
+    <string name="radio_others">OTHERS</string>
+    <string name="add_student_button">CREATE STUDENT</string>
+    <string name="button_save">SAVE</string>
+    <string-array name="sort">
+        <item>BY ROLL NO.</item>
+        <item>BY NAME</item>
+    </string-array>
+
+
+</resources>

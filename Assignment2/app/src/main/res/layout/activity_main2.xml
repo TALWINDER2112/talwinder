@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.assignment2.Activity.Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+         <TextView
+             style = "@style/UserFormLayout"
+             android:text="STUDENT NAME" />
+         <EditText
+                android:id="@+id/et_student_name"
+                style="@style/UserFormLayout"
+                android:inputType="textPersonName" />
+         <TextView
+                style = "@style/UserFormLayout"
+                android:text="SCHOOL NAME" />
+         <EditText
+                android:id="@+id/et_school_name"
+                style="@style/UserFormLayout"
+                android:inputType="textPersonName"/>
+         <TextView
+                style="@style/UserFormLayout"
+                android:text="EMAIL" />
+         <EditText
+                android:id="@+id/et_email"
+                style="@style/UserFormLayout"
+                android:inputType="textEmailAddress"/>
+
+         <RadioGroup
+             android:id="@+id/radio_group_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_male"/>
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_female"/>
+                <RadioButton
+                    android:id="@+id/radioOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_others"
+                    />
+
+         </RadioGroup>
+
+         <TextView
+                style="@style/UserFormLayout"
+                android:text="ROLL NUMBER"/>
+         <EditText
+             android:id="@+id/et_roll_number"
+                style="@style/UserFormLayout"
+                android:inputType="number"
+                android:maxLength="3"/>
+
+         <Button
+                android:id="@+id/btnSave"
+                style="@style/UserFormLayout"
+                android:layout_gravity="bottom"
+                android:text="@string/button_save"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
